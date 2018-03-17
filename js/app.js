@@ -77,6 +77,7 @@ function displayQuestion(){
 
 
 function showSummary(){
+  $('.score span').text(score);
   $('ul').html('');
   $('.ready').removeClass('ready').addClass('restart').text('Restart Quiz');
   $('h2').text('Congrats! You Scored ' +(score/questions.length)*100+' percent');
